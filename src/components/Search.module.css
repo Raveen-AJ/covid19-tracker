@@ -1,0 +1,34 @@
+.search {
+  width: 100%;
+  height: 30px;
+  font-family: "Baloo Thambi 2", cursive;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 2em;
+  background-color: black;
+  color: white;
+}
+
+.search option {
+  text-align: center;
+}
+
+@media (max-width: 800px) {
+  .search {
+    font-size: 1.5em;
+  }
+}
+
+@media (max-width: 600px) {
+  .search {
+    font-size: 1.3em;
+  }
+}
+
+@media (max-width: 400px) {
+  .search {
+    font-size: 1em;
+    width: 75%;
+  }
+}

@@ -1,0 +1,77 @@
+.tile {
+  background-color: black;
+  border-radius: 10px;
+  height: 60px;
+  width: 200px;
+  color: white;
+  padding: 5px;
+  text-align: center;
+  box-shadow: black 2px 2px 2px;
+  margin: 5px;
+  box-sizing: border-box;
+  font-size: 1.5em;
+}
+
+.tile h1 {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.tile * {
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 800px) {
+  .tile {
+    font-size: 1em;
+    height: 50px;
+    width: 120px;
+  }
+}
+
+@media (max-width: 600px) {
+  .tile {
+    font-size: 0.8em;
+    width: 100px;
+    height: 42px;
+  }
+}
+
+@media (max-width: 400px) {
+  .tile {
+    font-size: 0.7em;
+    width: 80px;
+    height: 40px;
+  }
+}
+
+@media (min-width: 801px) and (max-height: 656px) {
+  .tile {
+    font-size: 1em;
+    height: 50px;
+  }
+}
+
+@media (min-width: 601px) and (max-height: 540px) {
+  .tile {
+    font-size: 1em;
+    height: 42px;
+    width: 120px;
+  }
+}
+
+@media (min-width: 401px) and (max-height: 480px) {
+  .tile {
+    font-size: 0.7em;
+    height: 50px;
+    width: 100px;
+  }
+}
+
+@media (max-height: 480px) and (max-width: 660px) {
+  .tile {
+    width: 80px;
+    height: 40px;
+  }
+}

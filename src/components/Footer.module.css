@@ -1,0 +1,35 @@
+.footer {
+  display: fixed;
+  bottom: 0;
+  height: calc(25vh - 70px);
+  background-color: black;
+  width: 100%;
+  color: white;
+  text-align: center;
+}
+
+.footer p {
+  margin: 0;
+  padding: 0;
+  font-size: 1.5em;
+}
+
+.footer div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+@media (max-height: 480px) {
+  .footer {
+    height: calc(25vh - 40px);
+  }
+}
+
+@media (max-width: 450px) {
+  .footer {
+    height: calc(25vh - 40px);
+  }
+}

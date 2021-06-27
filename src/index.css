@@ -1,13 +1,94 @@
+@import url("https://fonts.googleapis.com/css?family=Baloo+Thambi+2&display=swap");
+html {
+  box-sizing: border-box;
+  font-size: 10px;
+}
 body {
+  width: 100vw;
+  height: 100vh;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  overflow: hidden;
+  font-family: "Baloo Thambi 2", cursive !important;
+  background-color: #081217 !important;
+  /* min-height: 450px; */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+#root .App,
+.mapContainer,
+.mapBox {
+  width: 100%;
+  height: 100vh;
+}
+
+.mapboxgl-popup {
+  font-size: 10px;
+  padding: 0;
+  margin: 0;
+  color: #424242;
+  text-rendering: optimizeLegibility;
+  font-family: "Baloo Thambi 2", cursive;
+}
+.mapboxgl-popup-content {
+  padding: 1rem;
+  margin: 0;
+}
+.mapboxgl-popup-content > * {
+  margin: 0 0 0.5rem;
+  padding: 0;
+}
+.mapboxgl-popup-content > *:last-child {
+  margin-bottom: 0;
+}
+.mapboxgl-popup-content p {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+.mapboxgl-popup-content p b {
+  font-size: 1.6rem;
+  color: #212121;
+  padding: 0 5px;
+}
+.mapboxgl-popup-content img {
+  display: block;
+  width: 3rem;
+  height: 3rem;
+}
+
+.mapboxgl-popup-close-button {
+  margin: 0 2px 2px 2px;
+  font-size: 2rem;
+}
+
+@media (max-width: 600px) {
+  .mapboxgl-popup-content p b {
+    font-size: 1.2rem;
+  }
+  .mapboxgl-popup-content > * {
+    margin: 0 0 0.1rem;
+  }
+}
+
+.canvasjs-chart-credit {
+  display: none !important;
+}
+
+a[href="https://canvasjs.com/"]
+{
+  display: none;
+}
+
+.canvasjs-chart-tooltip {
+  width: auto !important;
+}
+
+.nav-active {
+  background-color: #37439e;
+  color: black;
+}
+
+@media (max-height: 450px) {
+  body {
+    /* height: 453px; */
+    /* overflow: scroll; */
+  }
 }

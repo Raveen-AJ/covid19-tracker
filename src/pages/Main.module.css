@@ -1,0 +1,47 @@
+.fixed {
+  position: fixed;
+  top: 80px;
+  left: 10px;
+}
+
+.tiles {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  position: fixed;
+  top: 115px;
+  left: 10px;
+  border-radius: 10px;
+}
+
+@media (max-width: 800px) {
+  .tiles {
+    width: 125px;
+  }
+}
+
+@media (max-width: 600px) {
+  .tiles {
+    width: 100px;
+  }
+}
+
+@media (max-width: 400px) {
+  .tiles {
+    width: 80px;
+  }
+}
+
+@media (max-height: 480px) {
+  .tiles {
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    left: 0;
+    top: unset;
+    bottom: calc(25vh - 30px);
+  }
+  .fixed {
+    top: 50px;
+  }
+}
